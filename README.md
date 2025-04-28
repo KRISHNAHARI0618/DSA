@@ -129,11 +129,18 @@ class HashTable
 - N-Queens Problem
 - Sudoku Solver
 - Subsets, Permutations, Combinations
-
-### Recursion Concepts:
+- **Recursion Concepts:**
   - A way of solving a problem by having a function calling itself
   - Same function calling multiple times with decreasing the input values 
   - Base Condition is needed to mention else infinite loop will occur
+- **Why Recursion**
+  - Recursion the important when you have  bigger problem need to divide sub-problems
+  - The prominent usage of recursion in data structures like trees and graphs
+  - interviews
+  - It is used in many algorithims 
+    - divide and conquer
+    - Greedy
+    - Dynamic Programming
   - 
 
 ## Linked Lists
