@@ -130,6 +130,12 @@ class HashTable
 - Sudoku Solver
 - Subsets, Permutations, Combinations
 
+### Recursion Concepts:
+  - A way of solving a problem by having a function calling itself
+  - Same function calling multiple times with decreasing the input values 
+  - Base Condition is needed to mention else infinite loop will occur
+  - 
+
 ## Linked Lists
 - Linked Lists - Basics & Operations
 - Linked Lists - Reversal & Merge
