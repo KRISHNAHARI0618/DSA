@@ -130,7 +130,7 @@ class HashTable
 - Sudoku Solver
 - Subsets, Permutations, Combinations
 - **Recursion Concepts:**
-  - A way of solving a problem by having a function calling itself
+  - A way of solving a problem by calling function itself
   - Same function calling multiple times with decreasing the input values 
   - Base Condition is needed to mention else infinite loop will occur
 - **Why Recursion**
@@ -141,7 +141,16 @@ class HashTable
     - divide and conquer
     - Greedy
     - Dynamic Programming
-  - 
+  - **Recursion vs Iteration**
+    - recursion will take stack space while iteration not
+    - recursion will take time as input grows while iteration not
+    - Iteration is better in some places 
+  - **When to Use Recursion**
+    - when we can easily breakdown larger problems into sub problems
+    - when we are fine with extra spaces and extra time that comes with it
+    - when we need quick working solution 
+    - when we use traversal
+    - when we use memoization in recursion
 
 ## Linked Lists
 - Linked Lists - Basics & Operations
