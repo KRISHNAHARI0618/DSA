@@ -1,5 +1,5 @@
-# DSA
-Data Structures and Algorithms
+# DSA :
+- Data Structures and Algorithms
 
 #### 8 Patterns to Solve 80% Leetcode problems
 
