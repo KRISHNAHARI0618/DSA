@@ -38,11 +38,4 @@
       - There should be a Limit in Hardware
 - **Consistent Hashing**
   - *Load Balancing*
-    - Balances the load bases on the requests per user and caching so that one user within specific period of time will send to same machine
-
-### Change the Color to Terminal Folder
-
-- PS1="\[\e[36m\]\w\[\e[0m\] \[\e[33m\]\$\[\e[0m\] "
-- vim ~/.bashrc
-- source ~/.bashrc
-
+    - Balances the load bases on the requests per user and caching so that one user within specific period of time will send to same machine.
