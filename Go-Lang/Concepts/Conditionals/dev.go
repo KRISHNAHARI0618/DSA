@@ -18,7 +18,7 @@ func sum() {
 	fmt.Printf("The Number is %v \n ", x)
 
 	if z := 2 * rand.Intn(x); z <= x {
-		fmt.Printf("The Number is %v \n ", z)
+		fmt.Printf("z is %v and x is %v \n ", z, x)
 	} else {
 		fmt.Println("Added New Lifes ")
 	}
