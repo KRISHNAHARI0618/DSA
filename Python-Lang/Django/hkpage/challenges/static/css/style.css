@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body{
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 161, 152);
+    font-family: "Permanent Marker",cursive ;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+span{
+    background: url("https://cdn1.iconfinder.com/data/icons/filled-line-christmas-icons/75/_love_merry_christmas-128.png") ;
+    width: 100px;
+    height: 100px;;
+    position: absolute;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    animation: animate 20s linear ;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%,-50%); 
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+    100%{
+        transform: translate(-50%,-5000%);
+        opacity: 0;
+        filter: hue-rotate(700BGR);
+    }
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+.login-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
