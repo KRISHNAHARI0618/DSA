@@ -1,9 +1,7 @@
-print("Peddireddy Hari Vardhan Reddy")
+from Stacks import modules
 
-from Stacks import modules as se
-
-print(se.stack.peekMethod())
-print(se.stack.deleteStack())
+print(modules.stack.peekMethod())
+print(modules.stack.deleteStack())
 
 
 

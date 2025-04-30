@@ -35,3 +35,64 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# PyInstaller
+*.spec
+
+# pytest
+.cache/
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+
+# VS Code settings
+.vscode/
+
+# JetBrains IDEs
+.idea/
+
+# macOS system files
+.DS_Store
+
+# Logs
+*.log
+
+# SQLite database files
+*.sqlite3
+
+# Environment variables
+.env
+.env.*
+
+# Coverage reports
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+*.py,cover
+
+# Pylint
+pylint-report.txt
+pylint-global.txt
+
