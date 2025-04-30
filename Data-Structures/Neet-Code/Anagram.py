@@ -42,3 +42,10 @@ def anagramsCount(s:str,c:str):
     return True
 
 print(anagramsCount("abcabc","bbccaa"))
+
+name = "peddireddy"
+dictAB = {}
+for i in range(len(name)):
+    print(name[i])
+    dictAB[name[i]] = 1+dictAB.get(name[i],0)
+print(dictAB)
