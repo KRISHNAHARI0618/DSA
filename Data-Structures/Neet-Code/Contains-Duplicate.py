@@ -1,3 +1,4 @@
+from ast import Set
 from typing import Any
 
 
@@ -38,3 +39,16 @@ def containsDup(arr: Any) -> Any:
 list1 = [2,3,9,8,6,5,2,3]
 result1,result2 = containsDup(list1)
 print(result1,result2)
+
+def DuplicateArray(arr : any)-> any:
+    hashSet = set()
+    for i in arr:
+        if i in hashSet:
+            return True
+        hashSet.add(i)
+    return False
+
+list = [2,3,4,9,8,7,4,3,2]
+dpar = DuplicateArray(list)
+print(dpar)
+
