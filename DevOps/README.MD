@@ -46,5 +46,30 @@ git push -u origin main
 
 ## read command 
 - Read command will read the data from terminal and it will store data in variable
+
+## Exit Status
+- $? --> Syntax to check whether previous command is success or not 
+- $? == 0 --> Then Previous Command is Success
+- $? == 1 - 127  --> Then Previous Command is Failure 
+
+## Functions 
+- When you are Running Repeated command/code multiples times we can keep all in one place and call when ever required
 - 
-- 
+```
+validate(){
+  # It will take the $1 argument by default
+  if [ $1 -eq 0 ]
+  then 
+      echo "The installation Is Sucess"
+  else
+      echo "The install is Failure"
+  fi
+
+}
+```
+
+## Redirections
+- 1> it will take success output/messages to the files
+- 2> It will take the failure messages/output to files
+- &> will push the output changes to file and everytime i will over write and delete old ones
+- &>> Will append the output and add at the end of the file
