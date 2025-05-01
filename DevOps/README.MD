@@ -35,6 +35,11 @@ git push -u origin main
 ## Concepts :
 - *Variables*
   - var1=$1, var2=$2 echo "$2"
+  - *Special Varibales*
+    - $@ --> All Variables
+    - $# --> Count Variables
+    - $VAR --> Variables name
+    - $0 --> Will Give the File Name
   
 - *Data Types*
   - We dont have data types in shell script 
@@ -75,3 +80,23 @@ validate(){
 - 2> It will take the failure messages/output to files
 - &> will push the output changes to file and everytime i will over write and delete old ones
 - &>> Will append the output and add at the end of the file
+- < is the input section
+
+## Colors
+
+- echo -e "\e[30mHello World" --> Grey Color
+- echo -e "\e[31mHello World" --> Red Color
+- echo -e "\e[32mHello World" --> Green Color
+- echo -e "\e[33mHello World" --> Yellow Color
+- echo -e "\e[34mHello World" --> Blue Color
+- echo -e "\e[35mHello World" --> Pink Color
+- echo -e "\e[36mHello World" --> Dark Blue 
+- echo -e "\e[37mHello World" --> White Color
+
+## For Loops : 
+```
+for i in list
+do
+  echo "$i"
+done
+```
