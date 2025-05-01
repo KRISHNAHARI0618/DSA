@@ -1,4 +1,4 @@
-class Stack:
+class Stacks:
     def __init__(self,maxList):
         self.maxList = maxList
         self.list = []
@@ -13,4 +13,5 @@ class Stack:
         else:
             return False
 
-maxStack = Stack()
+maxStack = Stacks(20)
+print(maxStack)
