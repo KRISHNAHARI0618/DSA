@@ -33,17 +33,18 @@ git push -u origin main
 - How to excute the scripts we need to give shebang
 
 ## Concepts :
-- Variables
+- *Variables*
   - var1=$1, var2=$2 echo "$2"
-- Data Types
+  
+- *Data Types*
   - We dont have data types in shell script 
   - Boolean 
     - 0 --> Failure
     - 1 --> Success
   - Array = ("shell" "bash" "zsh" "sh" "ksh")
-- Conditions
-- Loops
-- Functions
+- *Conditions*
+- *Loops*
+- *Functions*
 
 ## read command 
 - Read command will read the data from terminal and it will store data in variable
