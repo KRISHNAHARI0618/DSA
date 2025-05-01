@@ -28,7 +28,8 @@ git push -u origin main
 
 ```
 
-## Shebang #!/bin/bash/
+## Shebang 
+- ```#!/bin/bash/```
 - How to excute the scripts we need to give shebang
 
 ## Concepts :
