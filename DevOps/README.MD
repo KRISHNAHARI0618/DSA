@@ -100,3 +100,10 @@ do
   echo "$i"
 done
 ```
+
+## Process Management 
+- `ps` this is to check the only application process 
+- `ps aux` to check for all process in Liunx it will show cpu and memory utilization
+- `ps -ef` to check all process and it will not show cpu and memory utilization
+- `ps aux | wc -l` or `ps aux | wc -l` to cound the process
+- 
