@@ -106,4 +106,18 @@ done
 - `ps aux` to check for all process in Liunx it will show cpu and memory utilization
 - `ps -ef` to check all process and it will not show cpu and memory utilization
 - `ps aux | wc -l` or `ps aux | wc -l` to cound the process
+- `kill` to kill any process normally
+- `kill -9 pid` to forcefully kill the process 
+- `ps aux | grep 8080` it will check the all 8080 port running instances
+- `kill -STOP pid` to stop any running process
+- `kill -CONT pid` to continus the process
+- `renice -n -5 -p <pid>` to make this process as priority one
+- `renice -n 10 -p <pid>` to make this process pririty as 10 th place 
+
+## Monitoring or Memory Related Commands
+- `top` to check the status and memory etcc things in linux
+- `htop` human readable of status of machine memory cpu utilization etc..
+- `free -h` comamnd used to check the free memory resourecs in linux
+- `df -h` used to find the disk free in linux
+- `vmstat` shows the statisics of vm 
 - 

@@ -39,3 +39,12 @@
 - **Consistent Hashing**
   - *Load Balancing*
     - Balances the load bases on the requests per user and caching so that one user within specific period of time will send to same machine.
+
+### Messaging Queues:
+- Messaging queue is a components where it takes requests/tasks and process and will send to particular servers and gets acknowledged 
+- if it has not received any requests within some time it feels sever is not ready and send the requests to another active server
+- Servers are processing jobs in parallel.
+- A server can crash. The jobs running on the crashed server still needs to get processed.
+- A notifier constantly polls the status of each server and if a server crashes it takes ALL unfinished jobs (listed in some database) and distributes it to the rest of the servers.
+- Because distribution uses a load balancer (with consistent hashing) duplicate processing will not occur as job_1 which might be processing on server_3 (alive) will land again on server_3, and so on.
+- This "notifier with load balancing" is a "Message Queue".
