@@ -1,10 +1,7 @@
 # DSA :
 - Data Structures and Algorithms
 
-## Dsa Notes:
-```
-[https://github.com/Deeksha2501/Data-Structures-and-Algorithms-Notes/tree/main]
-```
+#[ Dsa Notes:](https://github.com/Deeksha2501/Data-Structures-and-Algorithms-Notes/tree/main)
 
 #### 8 Patterns to Solve 80% Leetcode problems
 
