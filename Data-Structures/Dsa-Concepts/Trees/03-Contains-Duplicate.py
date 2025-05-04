@@ -18,12 +18,11 @@ name2= set(name1)
 
 print(name2)
 
-
-def missingNumber(nums,n) -> any:
+def missingNumber(arr,n) -> any:
+    nums = []
     for i in range(n):
-        if i not in nums:
-            return i
-        # return i
+        if i not in arr:
+            nums.append(i)
+    print(nums)
 
-list1 = [0,1,2,3,5,6,7]
-print(missingNumber(list1,8))
+missingNumber([1,2,3,4,5,6,7],10)
