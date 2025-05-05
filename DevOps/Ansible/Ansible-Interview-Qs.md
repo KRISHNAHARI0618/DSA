@@ -54,16 +54,16 @@
 
 ## 📋 List & Dictionary Filters
 
-| Filter                  | Description                                            | Example                                          |
-| ----------------------- | ------------------------------------------------------ | ------------------------------------------------ |
-| `map(attribute)`        | Applies a function or attribute to all items in a list | `users \| map(attribute='name')`                 |
-| `selectattr(attribute)` | Filters items by matching attribute                    | `users \| selectattr('active', 'equalto', true)` |
-| `sort`                  | Sorts a list                                           | `my_list \| sort`                                |
-| `unique`                | Removes duplicates from a list                         | `my_list \| unique`                              |
-| `length`                | Gets the length of a list or string                    | `my_list \| length`                              |
-| `flatten`               | Flattens nested lists                                  | `nested_list \| flatten`                         |
-| `combine`               | Merges dictionaries                                    | `dict1 \| combine(dict2)`                        |
-| `dictsort`              | Sorts dictionary items by key or value                 | `my_dict \| dictsort`                            |
+| Filter                  | Description                                                | Example                                          |
+| ----------------------- | ---------------------------------------------------------- | ------------------------------------------------ |
+| `map(attribute)`        | Applies a **function** or attribute to all items in a list | `users \| map(attribute='name')`                 |
+| `selectattr(attribute)` | Filters items by matching attribute                        | `users \| selectattr('active', 'equalto', true)` |
+| `sort`                  | Sorts a list                                               | `my_list \| sort`                                |
+| `unique`                | Removes duplicates from a list                             | `my_list \| unique`                              |
+| `length`                | Gets the length of a list or string                        | `my_list \| length`                              |
+| `flatten`               | Flattens nested lists                                      | `nested_list \| flatten`                         |
+| `combine`               | Merges dictionaries                                        | `dict1 \| combine(dict2)`                        |
+| `dictsort`              | Sorts dictionary items by key or value                     | `my_dict \| dictsort`                            |
 
 ---
 
@@ -139,5 +139,32 @@
 - Archive
 - Un_archive
 - Systemd
-- 
+- Commad
+- Shell
+  
+### Loops in Ansible
+
+**For Loop**
+```
+- name: Install multiple packages
+  apt:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - git
+    - curl
+    - vim
+```
+**For Each Loop**
+```
+- name: Create multiple users with shell
+  user:
+    name: "{{ item.key }}"
+    shell: "{{ item.value }}"
+  loop: "{{ users | dict2items }}"
+  vars:
+    users:
+      alice: /bin/bash
+      bob: /bin/zsh
+```
 
