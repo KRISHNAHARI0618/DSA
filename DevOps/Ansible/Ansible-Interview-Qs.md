@@ -12,10 +12,12 @@
 - Ansible modules are idempotent, meaning they only make changes when required. This ensures repeatability and prevents unintended side effects.
 
 ### 3. What are Ansible facts? How can you gather and use them in playbooks?
-- Facts are system properties (OS, IP, memory) gathered using the `setup` module. Use them in playbooks via `{{ ansible_facts['hostname'] }}`.
+- Facts are system properties (OS, IP, memory) gathered using the `setup` module.
+- Use them in playbooks via `{{ ansible_facts['hostname'] }}`.
 
 ### 4. What is the purpose of an `inventory` file? Can you use dynamic inventories?
-- It defines the list of hosts managed by Ansible. Yes, dynamic inventories can be used via external scripts or cloud plugins.
+- It defines the list of hosts managed by Ansible.
+- Yes, dynamic inventories can be used via external scripts or cloud plugins.
 
 ### 5. What are the different types of variables in Ansible and their precedence order?
 - Types: inventory vars, playbook vars, role vars, extra vars, etc.
@@ -49,6 +51,44 @@
 
 ### 13. Give an example of using Ansible filters in a template.
 - Example: `{{ some_list | join(', ') }}` joins list items into a string.
+
+## 📋 List & Dictionary Filters
+
+| Filter                  | Description                                            | Example                                          |
+| ----------------------- | ------------------------------------------------------ | ------------------------------------------------ |
+| `map(attribute)`        | Applies a function or attribute to all items in a list | `users \| map(attribute='name')`                 |
+| `selectattr(attribute)` | Filters items by matching attribute                    | `users \| selectattr('active', 'equalto', true)` |
+| `sort`                  | Sorts a list                                           | `my_list \| sort`                                |
+| `unique`                | Removes duplicates from a list                         | `my_list \| unique`                              |
+| `length`                | Gets the length of a list or string                    | `my_list \| length`                              |
+| `flatten`               | Flattens nested lists                                  | `nested_list \| flatten`                         |
+| `combine`               | Merges dictionaries                                    | `dict1 \| combine(dict2)`                        |
+| `dictsort`              | Sorts dictionary items by key or value                 | `my_dict \| dictsort`                            |
+
+---
+
+## 🔤 String Filters
+
+| Filter           | Description                            | Example                                    |
+| ---------------- | -------------------------------------- | ------------------------------------------ |
+| `lower`, `upper` | Converts string to lower/upper case    | `"Hello" \| lower` → `"hello"`             |
+| `replace`        | Replaces substrings                    | `"abc" \| replace('a', 'x')` → `"xbc"`     |
+| `split`, `join`  | Splits or joins strings                | `"a,b" \| split(',')`                      |
+| `regex_search`   | Extracts substring with regex          | `"abc123" \| regex_search('[0-9]+')`       |
+| `regex_replace`  | Replaces parts of a string using regex | `"abc123" \| regex_replace('[0-9]+', 'X')` |
+
+---
+
+## 🔧 Miscellaneous Filters
+
+| Filter                  | Description                                      | Example                      |
+| ----------------------- | ------------------------------------------------ | ---------------------------- |
+| `default(value)`        | Provides a fallback if the variable is undefined | `my_var \| default('empty')` |
+| `bool`                  | Converts a value to boolean                      | `"yes" \| bool`              |
+| `to_json` / `from_json` | Converts to/from JSON string                     | `my_dict \| to_json`         |
+| `to_nice_json`          | Converts to pretty-printed JSON                  | `my_dict \| to_nice_json`    |
+
+---
 
 ### 14. How do you pass extra variables to a playbook at runtime?
 - Use `-e` flag: `ansible-playbook playbook.yml -e "var1=value1"`
