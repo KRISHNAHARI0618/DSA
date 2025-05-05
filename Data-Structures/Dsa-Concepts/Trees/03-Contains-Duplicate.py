@@ -26,3 +26,9 @@ def missingNumber(arr,n) -> any:
     print(nums)
 
 missingNumber([1,2,3,4,5,6,7],10)
+
+# Hashing Function is going to cgange
+
+
+
+

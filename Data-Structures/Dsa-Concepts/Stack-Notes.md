@@ -76,3 +76,10 @@ class LinkedList:
 - The `Node` class represents an individual element in the linked list, containing a value and a reference to the next node.
 - The `LinkedList` class manages a collection of these nodes, starting from the `head` node.
 - The `__iter__` method in the LinkedList class provides a way to iterate over the nodes of the list, yielding each node in turn.
+
+### Dsa Notes Using Python
+- String Programs
+- Array Programs
+- List Programs
+- Dictionary Programs
+- 
