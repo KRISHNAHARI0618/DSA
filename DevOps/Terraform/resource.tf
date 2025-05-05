@@ -16,7 +16,6 @@ resource "aws_instance" "name" {
   security_groups = ["0.0.0.0/0"]
   tags = {
     "key" = "devops"
-
   }
 
 }
