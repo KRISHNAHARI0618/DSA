@@ -1,10 +1,10 @@
-from ast import Set
-from typing import Any
 
+from collections.abc import Set
+from typing import Any
 
 class solution:
     def containsDuplicate(self,nums: list[int]) -> Any:
-        hashSet = set()
+        hashSet = Set()
         for i in nums:
             if i in hashSet:
                 return True
