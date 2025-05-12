@@ -1,8 +1,42 @@
-# DSA :
-- Data Structures and Algorithms
+# DSA : 
+- #[ Dsa Notes:](https://github.com/Deeksha2501/Data-Structures-and-Algorithms-Notes/tree/main)
+- Data Structures and Algorithms:
+  - Structuring the data in a useful manner
+- *Complexity Analysis*
+  - By Counting the number of simples operations that computer has to do to solve any problem
+  - As input grows in what proportion does the number of operations grow
+  - How Run Time Grows as Input Grows
+- *Asympototic Analysis*
+  - As an illustration, suppose that we are interested in the properties of a function f (n) as n becomes very large. If f(n) = n2 + 3n, then as n becomes very large, the term 3n becomes insignificant compared to n2. The function f(n) is said to be "asymptotically equivalent to n2, as n → ∞". This is often written symbolically as f (n) ~ n2, which is read as "f(n) is asymptotic to n2".
+#### Big O Notation
+- A Mathematical Notation that describes the limiting behaviour for function tends towards a particular value or infinity
+- As Input order increases propotion also get increases
 
-#[ Dsa Notes:](https://github.com/Deeksha2501/Data-Structures-and-Algorithms-Notes/tree/main)
+#### Common Complexities:
+- Big O `worst case find out how to optimize`
+- Big O(n) `Linear Structure`
+- Drop Constants ` Constants does have much impact on program`
+- Big(n^2) `Loop Inside Loop`
+- Drop Non-Dominants ` O(n^2 + n) we will drop single n`
+- Big O(1) `Simple Operations like addition etc ..`
+- O(log n) ` Divide and Conquor - Sorting Algorithms`
+- O(a+b) ` if iterations are different`
+- O(a*b) ` if the lop iteratees inside for multiple times`
 
+#### Array/List Data Structures
+- Accessing An element ---> `O(1)` Time ---> `O(1)` Space
+- Set an Element ---> `O(1)` Time ---> `O(1)` Space
+- Traversing an element ---> `O(n)` ---> `O(1)` Space
+- Searching An element ---> `O(n)` Time ---> `O(1)` Space
+- Copy Array ---> `O(n)` Time ---> `O(n)` Space
+- Inserting an Element
+  - At the Begining ---> `O(n)` Time ---> `O(1)` Space
+  - At the end ---> `O(1)` Time ---> `O(1)` Space
+  - Somewhere in midde ---> `O(n)` Time ---> `O(1)` Space
+- Removing an Element 
+  - At the Begining ---> `O(n)` Time ---> `O(1)` Space
+  - At the end ---> `O(1)` Time ---> `O(1)` Space
+  - Somewhere in midde ---> `O(n)` Time ---> `O(1)` Space
 #### 8 Patterns to Solve 80% Leetcode problems
 
 - 1. 2 pointer
@@ -15,18 +49,6 @@
 - 8. Sliding window
 - 9. Backtracking
 - 10. Dynamic Programming
-
-### Udemy Course DSA Python 
-
-- Big O `worst case find out how to optimize`
-- Big O(n) `Linear Structure`
-- Drop Constants ` Constants does have much impact on program`
-- Big(n^2) `Loop Inside Loop`
-- Drop Non-Dominants ` O(n^2 + n) we will drop single n`
-- Big O(1) `Simple Operations like addition etc ..`
-- O(log n) ` Divide and Conquor - Sorting Algorithms`
-- O(a+b) ` if iterations are different`
-- O(a*b) ` if the lop iteratees inside for multiple times`
 
 ### Linked List
 - Linnked list does not have indexes
@@ -44,10 +66,6 @@
   - Circular Singly Linked list : reference of last node is First Node
   - Circularly Double Linked List: reference of last node is First node value
   
-#### Big O Notation
-- Node is pointer & value 
-- Its is also a nested dictionary
-
 ### Hash Tables
 - Collisions :
   - Seperate Chaining
