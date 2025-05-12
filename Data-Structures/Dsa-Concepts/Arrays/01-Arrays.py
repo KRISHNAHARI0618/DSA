@@ -19,9 +19,9 @@ def sortedArr(array)-> any:
 sortedArr(arr)
 
 # Using Two Pointer Approach 
-# first ==> 0, last = len*sec - 1
+# first = 0, last = len(array) - 1
 
-def sortedSuare(array):
+def sortedSuare(array)-> any:
     n = len(array)
     first = 0
     last = n-1
