@@ -13,3 +13,11 @@ else:
 
 print(usage.percent)
 
+print(os.listvolumes())
+
+print("All is Well")
+
+
+
+
+
