@@ -36,3 +36,6 @@ def sortedSuare(array)-> any:
     print(arr)
 
 sortedSuare(arr)
+
+
+

@@ -41,5 +41,19 @@ for i in range(len(sort_list)):
         # for hashmap key adding list of strings
 print(list(hashMap.values()))
 
+# Using Hash Map Make a Group of anagrams
+
+strings = ["abc","bac","acb","cab","cba","bca"]
+
+sortedList = ["".join(sorted(i)) for i in strings]
+print(sortedList)
+hashmap = {}
+for i in range(len(sortedList)):
+    if sortedList[i] in hashmap:
+        hashmap[sortedList[i]].append(strings[i])
+    else:
+        hashmap[sortedList[i]] = [strings[i]]
+print(list(hashmap.values()))
+
 
     
