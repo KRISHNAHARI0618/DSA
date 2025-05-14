@@ -37,6 +37,20 @@
   - At the Begining ---> `O(n)` Time ---> `O(1)` Space
   - At the end ---> `O(1)` Time ---> `O(1)` Space
   - Somewhere in midde ---> `O(n)` Time ---> `O(1)` Space
+
+#### Recursion Notes:`[used](DP,Back-Tracking,BST)`
+
+- *What is Recursion*
+  - Function Calling By Itself until the specified condition met or based condition met is called **Recursion**
+- *Recursive Leap of Faith* `How to Use Recursion`
+  - 1: Understand The problem
+  - 2: Identify the Sub-Problem
+  - 3: Trust/Faith
+  - 4: Link 1 & 2
+  - 5: Base Condition
+- Recurrance Relation 
+  - Express the solution of porblem using solutions of teh subproblems
+  - 
 #### 8 Patterns to Solve 80% Leetcode problems
 
 - 1. 2 pointer
