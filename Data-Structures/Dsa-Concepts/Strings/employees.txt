@@ -1,0 +1,7 @@
+ID|Name|Age|Department|Salary
+1|Alice|30|Engineering|75000
+2|Bob|27|Marketing|52000
+3|Charlie|35|HR|68000
+4|Diana|29|Finance|60000
+5|Ethan|32|Engineering|80000
+
