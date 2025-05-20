@@ -50,7 +50,31 @@
   - 5: Base Condition
 - Recurrance Relation 
   - Express the solution of porblem using solutions of teh subproblems
-  - 
+
+## Back-Tracking:
+
+1. What is Back-Tracking?
+   1. Logarithimic Approach to solve problem in a multiple ways with controlled recursion method
+   2. Solutions are Build Step By Step
+   3. If one path of solution dont give correct answer violates that path
+   4. Modifications are done in-place
+2. How is Backtracking is different from Recursion?
+3. Pseudo Code for Back-Tacking
+```
+def helper():
+  if valid:
+    print
+    return
+  for choice in choices:
+    if isValid(choice):
+    choose
+    helper()
+    revert choice
+
+helper()
+```
+4. How to find permutations is almost equal to factorial for numbers 
+   1. - - - == 3! == 6 ways 3 characters word or number can rotate 6 ways
 #### 8 Patterns to Solve 80% Leetcode problems
 
 - 1. 2 pointer
