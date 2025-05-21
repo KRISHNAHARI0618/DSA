@@ -1,5 +1,8 @@
 # Contains Duplicate Hash Set Method
 
+from os import dup2
+
+
 class solution:
     def containsDuplicate(self,nums:list[int]):
         hashSet = set()
@@ -31,3 +34,18 @@ if nums != set(nums):
     print(True)
 else:
     print(False)
+
+
+print("................")
+
+class duplicates:
+    def duplicateArr(self,nums):
+        seen = set()
+        for i in nums:
+            if i in seen:
+                print(True)
+            seen.add(i)
+        print(False)
+
+obj1 = duplicates()
+obj1.duplicateArr(arrs)
