@@ -2,7 +2,6 @@
 
 from os import dup2
 
-
 class solution:
     def containsDuplicate(self,nums:list[int]):
         hashSet = set()

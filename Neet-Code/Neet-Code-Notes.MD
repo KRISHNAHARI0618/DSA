@@ -1,10 +1,86 @@
 # Neet-Code Problems and Notes with Solutions
 
-## Contains Duplicates
+## Contains Duplicates[HashSet]
+```
+hashSet = set()
+for i in nums:
+    if i in hashSet:
+        return true
+    hashSet.add(i)
+return False
 
-## Two Sum
+```
 
-## Group Anagrams
+## Two Sum [hashMap]
+```
+hashMap = {}
+for i,num in enumerate(nums):
+    diff = target - num
+    if diff in hashMap:
+        return [hashMap[diff],i]
+    hashMap[n] = i
+return 
+```
+
+## Group Anagrams [HashMap ][defaultdict(list)]
+```
+res = defaultdict(list)
+for word in words:
+    count = [0] * 26
+    for c in word:
+        count[ord(c)-ord(a)] += 1 
+    key = tuple(count)
+    res[key].append(s)
+return res.values()
+
+```
+
+## Given an array which consists of only 0, 1 and 2 [Dutch,National,Flag,Algorithim]
+
+```
+low = 0
+mid = 0
+high = len(n)-1
+while mid <= high:
+    if mid == 0:
+        low,mid = mid,low
+        low = low+1
+        mid = mid+1
+    elif mid == 1:
+        mid = mid + 1
+    else:
+        mid,high = high,mid
+        high = high - 1
+retrun arr
+
+```
+## Move all the negative elements to one side of the array
+1. Normal array.sort() or Sorted Metod --> Give O(nlog(n))
+```
+numbers = []
+numbers.sort()
+sorted(numbers)
+
+```
+2. Quick Sort Algorithim
+```
+for i in range(len(nums)):
+    if arr[i] < 0:
+        arr[i],a[j] = a[j],a[i]
+        j = j + 1
+print(arr)
+
+```
+3. Two Pointer Method
+4. Two Pass Method 
+
+## Prefix sum
+
+## Kadane’s algo
+
+## Two pointers
+
+## Product of subarray except itself
 
 ## Top K Frequent Elements
 
