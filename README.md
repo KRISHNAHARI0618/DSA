@@ -1,5 +1,57 @@
 # DSA : 
-- #[ Dsa Notes:](https://github.com/Deeksha2501/Data-Structures-and-Algorithms-Notes/tree/main)
+
+## Introduction and Goals of the Course:
+- The goal of this Introduction to Algorithms course is to teach students how to solve computational problems and communicate that their solutions are correct and efficient. 
+- Beyond just solving problems, the course emphasizes proving correctness, arguing efficiency, and communicating these ideas clearly. Students will do more writing than coding.
+- An algorithm is a fixed-size procedure that takes an arbitrary-sized input and produces a correct output.
+
+## What is a Problem?:
+- A computational problem consists of a set of possible inputs and outputs. The problem specifies a binary relation mapping each input to a set of correct outputs. 
+- Problems are usually defined using a predicate to check if an output is correct for a given input, not by explicitly listing all input-output pairs.
+- The course focuses on general problems that can take arbitrarily large inputs, requiring the algorithm to loop or recurse to process the entire input. 
+
+## What is an Algorithm?:
+- An algorithm is a fixed-size procedure that takes an input of arbitrary size and generates one of the correct outputs specified by the problem. 
+- If the algorithm generates an output for an input, it must be a correct output according to the problem specification.
+- Algorithms are like recipes - a sequence of steps that will return an output for any valid input. 
+
+## Birthday Problem Algorithm:
+- As an example, consider the problem of determining if any pair in a group of people share the same birthday, generalizing to any "birth time" to make matches less likely.
+- A proposed algorithm is: Maintain a record of birth times. Interview each person in order. Check if their birth time is already in the record. If so, return the match. If not, add it to the record and continue. If no matches after checking everyone, return no match.
+
+## Proving Algorithm Correctness: 
+- With large inputs, we can't just test an algorithm on all possibilities to argue its correctness. Instead, we use induction.
+- The key is finding an inductive hypothesis that can be proven true for a base case and all larger instances.
+- For the birthday problem, the inductive hypothesis is: If the first K people contained a match, the algorithm would return a match before interviewing person K+1.
+- Base case: Trivially true for K=0. 
+- Inductive step: Assume true for K. If first K+1 contain a match, either:
+   1. the match was in the first K and algorithm already returned it, or 
+   2. the match includes person K+1, which the algorithm will find and return when checking against the first K people's records.
+- By induction, if a match exists, the algorithm returns it before running out of people to interview. If it interviews everyone without returning a match, then no match exists.
+
+## Arguing Algorithm Efficiency:
+- An important aspect of an algorithm beyond correctness is its efficiency - how fast does it run and how does that compare to other possible algorithms?
+- Measuring actual running time is problematic as it depends on the particular input, the speed of the machine, and other implementation details. 
+- Instead, we count the number of fundamental operations executed by the algorithm to get an input-size-dependent measure irrespective of machine or implementation.
+- The number of operations an algorithm requires as a function of input size n is used to classify it using asymptotic notation: 
+    - Constant time: O(1), runs in bounded time irrespective of n
+    - Logarithmic time: O(log n) 
+    - Linear: O(n)
+    - Log-linear: O(n log n)
+    - Polynomial: O(n^c) for constant c > 1 (e.g. quadratic is c=2)
+    - Exponential Time: O(2^n), considered "intractable"
+- In this class, "efficient" generally means polynomial time, with linear or near-linear time being even better. Exponential is considered inefficient.
+
+## Models of Computation:
+- To measure efficiency abstractly in terms of fundamental operation counts, we need a model specifying what operations a computer can do in constant time.
+- The model used in this class is the Word RAM:
+    - Assumes a CPU connected to a large random access memory (RAM) consisting of a sequence of bits
+    - The CPU can read/write a word-sized block of memory in constant time (modern word size is 64 bits)
+    - The CPU can do integer arithmetic, comparisons, and logical bit operations on a constant number of words in constant time
+- The word RAM allows any individual word in memory to be accessed in constant time. However, accessing all n words of an arbitrary-size input requires O(n) operations.
+  
+
+### [ Dsa Notes:](https://github.com/Deeksha2501/Data-Structures-and-Algorithms-Notes/tree/main)
 - Data Structures and Algorithms:
   - Structuring the data in a useful manner
 - *Complexity Analysis*
@@ -24,6 +76,24 @@
 - O(log n) ` Divide and Conquor - Sorting Algorithms`
 - O(a+b) ` if iterations are different`
 - O(a*b) ` if the lop iteratees inside for multiple times`
+
+1. O(log n) : when the number is becoming half for every iteration it will take log n complexity
+2. O(n * log n) : There is one loop is iterating over n elements `n-complexity` and another is becoming half on every iteration is called will take log n complexity
+   1. hence teh loop is inside one loop is called we need to multiply and hence get `O(n * log n)`
+
+#### Frequency Counting:
+
+1. For comments and Declaration Steps
+   1. space count == 0
+   2. time count == 0
+2. For assignment and Return Statements if statements as well
+   1. space count == 1
+   2. time count == 1
+3. For Loop Conditions for n operations
+   1. space count == n
+   2. time count == n
+4. Ignore Constants terms
+5. Ignore Lowest order terms when it is with highest order terms
 
 #### Array/List Data Structures:
 
