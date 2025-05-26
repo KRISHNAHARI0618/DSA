@@ -28,7 +28,7 @@ else:
     print(False)
 
 
-nums = [1,2,3,4,1]
+nums = [1,2,3,4,1,4]
 if nums != set(nums):
     print(True)
 else:
@@ -48,3 +48,44 @@ class duplicates:
 
 obj1 = duplicates()
 obj1.duplicateArr(arrs)
+
+print("....................")
+n = len(nums)
+for i in range(n):
+    for j in range(i+1,n):
+        if nums[i] == nums[j]:
+            print(f"{nums[i]}",True)
+        else:
+            print(False)
+
+
+## This Will not work like that
+
+def containsDuplicate(nums):
+    left = 0
+    right = len(nums)-1
+    while left < right:
+        if nums[left] == nums[right]:
+            print(True)
+        left = left + 1
+        right = right - 1
+        print(False)
+
+containsDuplicate(nums)
+
+
+
+print("Adidng Hash Set Method")
+def DuplicateContains(nums):
+    n = len(nums)
+    hashSet = set()
+    for i in range(n):
+        if nums[i] in hashSet:
+            print(True)
+        hashSet.add(nums[i])
+    print(False)
+
+DuplicateContains(nums)
+
+
+

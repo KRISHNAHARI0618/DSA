@@ -34,3 +34,10 @@ def prefixFetch(prefixArray):
 
 p= preFixSum(nums)
 print(prefixFetch(p))
+
+
+class Node:
+    def __init__(self,value):
+        self.value = value
+        self.next = None
+        

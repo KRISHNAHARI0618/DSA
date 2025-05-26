@@ -50,6 +50,62 @@
     - The CPU can do integer arithmetic, comparisons, and logical bit operations on a constant number of words in constant time
 - The word RAM allows any individual word in memory to be accessed in constant time. However, accessing all n words of an arbitrary-size input requires O(n) operations.
   
+## Day-02 Data Structures [Intro]
+
+- *Iterface* :
+  - Interface What Data Can Store
+  - what operations are supportive
+  - what operation we can do
+
+- *Data Structures* :
+  - Representation of Data How to Stores and what operation can be done on that
+  - What Algorithims it can support to do multiple operations
+  - Operations --> Soluttions
+
+### *2 Main Types of Interfaces* :
+- Sets 
+  - 
+- *Seqeunce*
+  - 2 Main DS Concepts:
+    - Arrays
+    - Pointers
+- *Static Sequence of Interface* :
+  - Maintain a Sequence of Items
+  - Build(x) makes new DS
+  - Iterate Seeunce 
+  - Get
+  - Length
+  - Get at index
+  - Set at Index
+- *Solution for Interface Problem*: 
+  - Statis Arrays:
+    - Key: Word RAM Model of Computation
+    - Memory: Arrays of w-bit words
+    - Consecutive chunck of memory 
+    - Ararys[i] == memory[address(array)+i]
+    - O(1) --> get,set,len
+    - O(n) --> Build,Ietarate
+    - Memory ALlocation Model:
+      - allocate array of size n in O(n)
+      - Space Time
+  - Dynamic Arrays:
+    - Statis Arrays Operations + Addition and Deletion Operations
+    - Insert at middle of sequence [make new x]
+    - Delete at middle of Sequence
+    - Python Called Dynamic Arrays is `Lists`
+      - Inside Python Intrepreter
+      - relax constraint size(array)=n <--Items of seq>
+      - Enforce size == O(n) >= n
+      - maintain A[i] = X
+- Linked List:
+  - Store Items in Bunch of nodes
+  - Each Node has Iteam and next item pointer
+  - Keeps track of head of List and length of List
+  - Last Pointer is None.
+- Amortization:
+  - Averazing 
+  - Operation takes T(n) amortized Time
+  - if any k operations take <= k.T(n) Time
 
 ### [ Dsa Notes:](https://github.com/Deeksha2501/Data-Structures-and-Algorithms-Notes/tree/main)
 - Data Structures and Algorithms:
@@ -60,6 +116,7 @@
   - How Run Time Grows as Input Grows
 - *Asympototic Analysis*
   - As an illustration, suppose that we are interested in the properties of a function f (n) as n becomes very large. If f(n) = n2 + 3n, then as n becomes very large, the term 3n becomes insignificant compared to n2. The function f(n) is said to be "asymptotically equivalent to n2, as n → ∞". This is often written symbolically as f (n) ~ n2, which is read as "f(n) is asymptotic to n2".
+
 #### Big O Notation:
 
 - A Mathematical Notation that describes the limiting behaviour for function tends towards a particular value or infinity

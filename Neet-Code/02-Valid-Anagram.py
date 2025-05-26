@@ -51,6 +51,7 @@
 # print(dictAB)
 
 
+from asyncio.format_helpers import _format_callback_source
 from collections import Counter
 
 
@@ -74,4 +75,19 @@ def vaidAnagram(str1,str2):
 
 name1 = "hari"
 name2 = "rahi"
-print(vaidAnagram(name1,name2))
+print(vaidAnagram(name1,name2)) 
+
+## Revisioning Valid Anagram
+
+def validANagram(name1,name2):
+    if len(name1) != len(name2):
+        return False
+    countS = {}
+    countT = {}
+    for i in range(len(name1)):
+        countS[name1[i]] = 1 + countS.get(name1[i],0)
+        countT[name2[i]] = 1 + countT.get(name2[i],0)
+    for c in countS:
+        if countS[c] != countT.get(c,0):
+            return False
+    return True
