@@ -91,3 +91,15 @@ def validANagram(name1,name2):
         if countS[c] != countT.get(c,0):
             return False
     return True
+
+
+nums = [2,5,8,7,9]
+def sortingSelect(nums):
+    low = 0
+    for i in range(1,len(nums)):
+        if nums[low] < nums[i]:
+            nums[low],nums[i] = nums[i] ,nums[low]
+            
+        return nums
+
+print(sortingSelect(nums))
