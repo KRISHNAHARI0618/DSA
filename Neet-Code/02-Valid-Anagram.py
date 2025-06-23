@@ -103,3 +103,24 @@ def sortingSelect(nums):
         return nums
 
 print(sortingSelect(nums))
+
+string1 = "anagram"
+string2= "nagaram"
+
+count1 = {}
+count2 = {}
+
+def anagrams():
+    if len(string1) != len(string2):
+        return False
+    for i in range(len(string1)):
+        print(i)
+        count1[string1[i]] = 1 + count1.get(string1[i],0)
+        count2[string2[i]] = 1 + count2.get(string2[i],0)
+    for c in count1:
+        if count1[c] != count2.get(c,0):
+            return False
+    return True
+
+obj1 = anagrams()
+print(obj1)
