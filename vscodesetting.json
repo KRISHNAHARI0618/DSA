@@ -1,165 +1,180 @@
 {
-    "editor.inlineSuggest.enabled": true,
-    "editor.suggest.showWords": true,
-    "editor.suggest.localityBonus": true,
-    "editor.suggestSelection": "first",
-    "editor.quickSuggestions": {
-        "other": true,
-        "comments": false,
-        "strings": true
-    },
-    "editor.tabCompletion": "on",
-    "editor.parameterHints.enabled": true,
-    "editor.suggest.showStatusBar": true,
-    "editor.hover.enabled": true,
-    "intellicode.completionsEnabled": true,
-    "intellicode.modelDownloadPath": "",
-    "intellicode.typescript.completionsEnabled": true,
-    "intellicode.python.completionsEnabled": true,
-    "editor.autoClosingBrackets": "always",
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 1,
-    "editor.wordWrap": "on",
-    "editor.fontSize": 20,
-    "terminal.integrated.tabs.defaultColor": "terminal.ansiBlue",
-    "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.fontSize": 18,
-    "terminal.integrated.foreground": "#d8e28c",
-    "breadcrumbs.enabled": false,
-    "editor.codeActionsOnSave": {},
-    "git.enableSmartCommit": true,
-    "explorer.confirmDelete": false,
-    "python.analysis.diagnosticSeverityOverrides": {},
-    "python.analysis.completeFunctionParens": true,
-    "python.analysis.autoIndent": true,
-    "editor.tokenColorCustomizations": {
-        "[Atom One Dark]": {
-            "comments": "#d8e28c"
-        }
-    },
-    "editor.indentSize": "tabSize",
-    "gopls": {
-        "ui.semanticTokens": true
-    },
-    "git.openRepositoryInParentFolders": "always",
-    "explorer.confirmDragAndDrop": false,
-    "go.toolsManagement.autoUpdate": true,
-    "workbench.editor.labelFormat": "short",
-    "workbench.editor.languageDetection": false,
-    "workbench.editor.tabSizingFixedMaxWidth": 100,
-    "workbench.editor.tabSizingFixedMinWidth": 60,
-    "editor.accessibilityPageSize": 15,
-    "editor.renderControlCharacters": false,
-    "editor.minimap.size": "fit",
-    "editor.minimap.enabled": false,
-    "editor.renderLineHighlightOnlyWhenFocus": true,
-    "editor.minimap.renderCharacters": false,
-    "terminal.integrated.cursorWidth": 0,
-    "git.ignoreRebaseWarning": true,
-    "gitlens.advanced.messages": {
-        "suppressIntegrationRequestTimedOutWarning": true
-    },
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "git.replaceTagsWhenPull": true,
-    "workbench.editorAssociations": {
-        "*.gz": "default"
-    },
-    "notebook.markup.fontSize": 16,
-    "chat.editor.fontSize": 18,
-    "editor.lineHeight": 1.2,
-    "debug.console.lineHeight": 1.5,
-    "markdown.preview.lineHeight": 1,
-    "terminal.integrated.enableImages": true,
-    "debug.console.fontSize": 18,
-    "debug.autoExpandLazyVariables": "on",
-    "security.workspace.trust.untrustedFiles": "open",
-    "json.schemas": [],
-    "git.confirmSync": false,
-    "window.confirmSaveUntitledWorkspace": false,
-    "workbench.layoutControl.enabled": false,
-    "jupyter.enableExtendedPythonKernelCompletions": true,
-    "remote.SSH.enableRemoteCommand": true,
-    "remote.SSH.remoteServerListenOnSocket": true,
-    "output.smartScroll.enabled": false,
-    "notebook.consolidatedOutputButton": false,
-    "go.testExplorer.showOutput": false,
-    "editor.fontLigatures": false,
-    "redhat.telemetry.enabled": true,
-    "tabnine.experimentalAutoImports": true,
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "GitHub Light Default",
-    "terminal.integrated.enableMultiLinePasteWarning": false,
-    "window.commandCenter": false,
-    "terminal.integrated.fontWeight": "normal",
-    "workbench.fontAliasing": "auto",
-    "scm.inputFontSize": 18,
-    "markdown.preview.fontSize": 16,
-    "settingsSync.ignoredSettings": [
-        "-python.venvPath"
-    ],
-    "workbench.sash.size": 10,
-    "workbench.sash.hoverDelay": 3,
-    "workbench.tree.indent": 20,
-    "workbench.settings.applyToAllProfiles": [
-        "workbench.tree.indent"
-    ],
-    "editor.codeLensFontSize": 18,
-    "editor.codeLensFontFamily": "18",
-    "editor.experimentalInlineEdit.fontFamily": "18",
-    "editor.minimap.sectionHeaderFontSize": 18,
-    "editor.inlayHints.fontSize": 18,
-    "database-client.autoSync": true,
-    "python.globalModuleInstallation": true,
-    "editor.autoClosingQuotes": "always",
-    "code-runner.clearPreviousOutput": true,
-    "code-runner.runInTerminal": true,
-    "code-runner.saveAllFilesBeforeRun": true,
-    "code-runner.saveFileBeforeRun": true,
-    "python.analysis.autoFormatStrings": true,
-    "python.analysis.autoImportCompletions": true,
-    "python.analysis.cacheLSPData": true,
-    "python.analysis.diagnosticMode": "workspace",
-    "python.analysis.typeCheckingMode": "off",
-    "python.analysis.packageIndexDepths": [
-        { "name": "sklearn", "depth": 2 },
-        { "name": "matplotlib", "depth": 2 },
-        { "name": "scipy", "depth": 2 },
-        { "name": "django", "depth": 2 },
-        { "name": "flask", "depth": 2 },
-        { "name": "fastapi", "depth": 2 }
-    ],
-    "vsintellicode.java.completionsEnabled": true,
-    "terminal.integrated.defaultProfile.windows": "Git Bash",
-    "python.analysis.typeEvaluation.analyzeUnannotatedFunctions": false,
-    "python.analysis.typeEvaluation.strictParameterNoneValue": false,
-    "python.analysis.typeEvaluation.enableTypeIgnoreComments": false,
-    "python.analysis.enablePytestSupport": false,
-    "python.analysis.aiCodeActions": {
+   "editor.inlineSuggest.enabled": true,
+   "editor.suggest.showWords": true,
+   "editor.suggest.localityBonus": true,
+   "editor.suggestSelection": "first",
+   "editor.quickSuggestions": {
+       "other": true,
+       "comments": false,
+       "strings": true
+   },
+   "editor.tabCompletion": "on",
+   "editor.parameterHints.enabled": true,
+   "editor.suggest.showStatusBar": true,
+   "editor.hover.enabled": true,
+   "editor.autoClosingBrackets": "always",
+   "files.autoSave": "afterDelay",
+   "files.autoSaveDelay": 1,
+   "editor.wordWrap": "on",
+   "editor.fontSize": 20,
+   "terminal.integrated.tabs.defaultColor": "terminal.ansiBlue",
+   "terminal.integrated.cursorStyle": "line",
+   "terminal.integrated.fontSize": 16,
+   "terminal.integrated.foreground": "#d8e28c",
+   "editor.codeActionsOnSave": {},
+   "git.enableSmartCommit": true,
+   "explorer.confirmDelete": false,
+   "python.analysis.diagnosticSeverityOverrides": {},
+   "python.analysis.autoIndent": false,
+   "editor.tokenColorCustomizations": {
+       "[Atom One Dark]": {
+           "comments": "#d8e28c"
+       }
+   },
+   "editor.indentSize": "tabSize",
+   "gopls": {
+       "ui.semanticTokens": true
+   },
+   "git.openRepositoryInParentFolders": "always",
+   "explorer.confirmDragAndDrop": false,
+   "go.toolsManagement.autoUpdate": true,
+   "workbench.editor.labelFormat": "",
+   "workbench.editor.languageDetection": false,
+   "workbench.editor.tabSizingFixedMaxWidth": 50,
+   "workbench.editor.tabSizingFixedMinWidth": 40,
+   "editor.accessibilityPageSize": 15,
+   "editor.renderControlCharacters": false,
+   "editor.minimap.size": "fit",
+   "editor.minimap.enabled": false,
+   "editor.renderLineHighlightOnlyWhenFocus": true,
+   "editor.minimap.renderCharacters": false,
+   "git.ignoreRebaseWarning": true,
+   "gitlens.advanced.messages": {
+       "suppressIntegrationRequestTimedOutWarning": true
+   },
+   "[json]": {
+       "editor.defaultFormatter": "vscode.json-language-features"
+   },
+   "git.replaceTagsWhenPull": true,
+   "workbench.editorAssociations": {
+       "*.gz": "default"
+   },
+   "notebook.markup.fontSize": 16,
+   "chat.editor.fontSize": 18,
+   "editor.lineHeight": 1.2,
+   "debug.console.lineHeight": 1.5,
+   "markdown.preview.lineHeight": 1,
+   "terminal.integrated.enableImages": true,
+   "debug.console.fontSize": 18,
+   "debug.autoExpandLazyVariables": "on",
+   "security.workspace.trust.untrustedFiles": "open",
+   "json.schemas": [],
+   "git.confirmSync": false,
+   "window.confirmSaveUntitledWorkspace": false,
+   "workbench.layoutControl.enabled": false,
+   "jupyter.enableExtendedPythonKernelCompletions": true,
+   "remote.SSH.enableRemoteCommand": true,
+   "remote.SSH.remoteServerListenOnSocket": true,
+   "output.smartScroll.enabled": false,
+   "notebook.consolidatedOutputButton": false,
+   "go.testExplorer.showOutput": false,
+   "editor.fontLigatures": false,
+   "redhat.telemetry.enabled": true,
+   "tabnine.experimentalAutoImports": true,
+   "workbench.iconTheme": "a-file-icon-vscode",
+   "workbench.colorTheme": "One Dark Pro Darker",
+   "terminal.integrated.enableMultiLinePasteWarning": false,
+   "window.commandCenter": false,
+   "terminal.integrated.fontWeight": "normal",
+   "workbench.fontAliasing": "auto",
+   "scm.inputFontSize": 18,
+   "markdown.preview.fontSize": 16,
+   "settingsSync.ignoredSettings": [
+       "-python.venvPath"
+   ],
+   "workbench.sash.size": 10,
+   "workbench.sash.hoverDelay": 3,
+   "workbench.tree.indent": 20,
+   "workbench.settings.applyToAllProfiles": [
+       "workbench.tree.indent",
+       "vsintellicode.python.completionsEnabled"
+   ],
+   "editor.codeLensFontSize": 18,
+   "editor.codeLensFontFamily": "18",
+   "editor.experimentalInlineEdit.fontFamily": "18",
+   "editor.minimap.sectionHeaderFontSize": 10,
+   "editor.inlayHints.fontSize": 18,
+   "database-client.autoSync": true,
+   "python.globalModuleInstallation": true,
+   "python.analysis.inlayHints.callArgumentNames": "all",
+   "editor.autoClosingQuotes": "always",
+   "code-runner.clearPreviousOutput": true,
+   "code-runner.runInTerminal": true,
+   "code-runner.saveAllFilesBeforeRun": true,
+   "code-runner.saveFileBeforeRun": true,
+   "python.analysis.inlayHints.functionReturnTypes": true,
+   "python.analysis.inlayHints.pytestParameters": true,
+   "python.analysis.inlayHints.variableTypes": true,
+   "python.analysis.typeCheckingMode": "off",
+   "python.analysis.packageIndexDepths": [
+       { "name": "sklearn", "depth": 2 },
+       { "name": "matplotlib", "depth": 2 },
+       { "name": "scipy", "depth": 2 },
+       { "name": "django", "depth": 2 },
+       { "name": "flask", "depth": 2 },
+       { "name": "fastapi", "depth": 2 }
+   ],
+   "vsintellicode.java.completionsEnabled": true,
+   "python.analysis.autoSearchPaths": false,
+   "editor.renderWhitespace": "none",
+   "python.analysis.typeEvaluation.strictParameterNoneValue": false,
+   "python.analysis.useLibraryCodeForTypes": true,
+   "editor.accessibilitySupport": "off",
+   "python.analysis.autoFormatStrings": true,
+   "python.analysis.autoImportCompletions": true,
+   "python.analysis.completeFunctionParens": true,
+   "python.analysis.includeAliasesFromUserFiles": true,
+   "python.analysis.supportDocstringTemplate": true,
+   "github.codespaces.defaultExtensions": [
 
-    }
+
+       "GitHub.codespaces",
+       "GitHub.vscode-pull-request-github"
+   ],
+   "github.codespaces.createCodespaceInNewWindow": true,
+   "github.codespaces.allowUnsafeConnections": true,
+   "github.codespaces.showPerformanceExplorer": true,
+   "workbench.productIconTheme": "a-file-icon-vscode-product-icon-theme",
+   "chat.commandCenter.enabled": false,
+   "vs-kubernetes": {
+       "vscode-kubernetes.kubectl-path-mac": "/Users/harivardhanreddy/.vs-kubernetes/tools/kubectl/kubectl",
+       "vscode-kubernetes.helm-path-mac": "/Users/harivardhanreddy/.vs-kubernetes/tools/helm/darwin-arm64/helm",
+       "vscode-kubernetes.minikube-path-mac": "/Users/harivardhanreddy/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
+},
+"terminal.external.windowsExec": "",
+"terminal.integrated.defaultProfile.windows": "Git Bash",
+"python.analysis.supportAllPythonDocuments": true,
+"python.terminal.activateEnvInCurrentTerminal": true,
+"python.terminal.executeInFileDir": true,
+"python.terminal.focusAfterLaunch": true,
+"python.terminal.shellIntegration.enabled": true,
+"python.analysis.enableSyncServer": true,
+"[python]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.defaultColorDecorators": "never",
+    "editor.formatOnType": true,
+    "editor.wordBasedSuggestions": "off"
+},
+"python.createEnvironment.contentButton": "show",
+"python.defaultInterpreterPath": "C:\\Program Files\\Python313\\python.exe",
+"breadcrumbs.enabled": false,
+"editor.fontFamily": "Consolas",
+"workbench.statusBar.visible": false,
+"terminal.integrated.fontFamily": "Consolas",
+"terminal.integrated.lineHeight": 0.5,
+"editor.minimap.sectionHeaderLetterSpacing": 0.5,
+"azureTerraform.survey": {
+    "surveyPromptDate": "2025-06-27T13:38:09.087Z",
+    "surveyPromptIgnoredCount": 0
 }
-
-
-
-// additional steps:
-
-// You can learn more about virtual environments with Python here: https://docs.python.org/3/tutorial/venv.html
-
-// Using virtual environments is optional.
-
-// Using "Pylance"
-// When using Visual Studio Code (recommended), you can use the "Pylance" extension to get better code checks and code completion.
-
-// To enable it in your Python / Django project, you can add a special setting to your your project-specific configuration (i.e. your .vscode/settings.json file):
-
-// {
-
-// "python.languageServer": "Pylance",
-
-// python -m venv venv
-
-// source venv/Scripts/activate
-
-// }
+}
