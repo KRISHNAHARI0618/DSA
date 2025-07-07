@@ -1,5 +1,25 @@
 # Python Libraries for ML, AI, and Development
 
+## MLOps Tools and Technologies:
+
+------------------------------------------------------------------------------
+| Category                | Tools                                            |
+| ----------------------- | ------------------------------------------------ |
+| **Core Programming**    | Python, Go                                       |
+| **Data & ML Libraries** | Pandas, NumPy, scikit-learn, TensorFlow, PyTorch |
+| **IDE & Shell**         | VS Code, PyCharm, Bash                           |
+| **Versioning**          | Git, DVC                                         |
+| **Containerization**    | Docker                                           |
+| **Orchestration**       | Kubernetes                                       |
+| **ML Lifecycle**        | MLflow, Kubeflow, TFX                            |
+| **CI/CD**               | Jenkins, CircleCI, GoCD                          |
+| **Data Pipelines**      | Apache Airflow                                   |
+| **Monitoring**          | Prometheus, Grafana                              |
+| **Cloud MLOps**         | SageMaker, Databricks                            |
+| **Deployment**          | Flask API, FastAPI, TensorFlow Serving,          |
+|                                                         TorchServe         |
+------------------------------------------------------------------------------
+
 ## Core Libraries
 - Python Libraries
 - NumPy Basics
